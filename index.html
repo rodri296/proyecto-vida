@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Proyecto Vida</title>
+  <meta name="description" content="Panel personal de David que funciona en su propio ordenador.">
+  <style>
+    :root { --fondo: #f6f5fb; --tarjeta: #fff; --texto: #1c1b2e; --texto-2: #5b5a72; --acento: #6d4dff; --borde: #e6e3f3; }
+    @media (prefers-color-scheme: dark) { :root { --fondo: #12111c; --tarjeta: #1c1b2a; --texto: #f1f0f7; --texto-2: #a9a7c0; --acento: #9b85ff; --borde: #2c2a40; } }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--fondo); color: var(--texto); font: 16px/1.6 system-ui, -apple-system, "Segoe UI", sans-serif; }
+    main { max-width: 680px; margin: 0 auto; padding: 56px 16px 72px; }
+    .marca { display: inline-flex; align-items: center; gap: 10px; font-weight: 700; font-size: 15px; }
+    .marca span { width: 34px; height: 34px; border-radius: 10px; background: var(--acento); color: #fff; display: grid; place-items: center; font-size: 18px; }
+    h1 { font-size: 34px; letter-spacing: -.02em; line-height: 1.15; margin: 28px 0 12px; }
+    h2 { font-size: 19px; margin: 32px 0 8px; }
+    p, li { color: var(--texto-2); }
+    ul { padding-left: 20px; }
+    .tarjeta { background: var(--tarjeta); border: 1px solid var(--borde); border-radius: 16px; padding: 20px 22px; margin-top: 24px; }
+    a { color: var(--acento); }
+    footer { margin-top: 40px; font-size: 14px; color: var(--texto-2); }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="marca"><span>✦</span>Proyecto Vida</div>
+    <h1>Un panel personal para organizar el día a día</h1>
+    <p>Proyecto Vida es una aplicación privada que David usa en su propio ordenador. Reúne en un solo sitio su agenda, sus tareas, sus estudios, sus finanzas y sus documentos.</p>
+
+    <div class="tarjeta">
+      <h2 style="margin-top:0">Qué hace con tu cuenta de Google</h2>
+      <ul>
+        <li><strong>Google Calendar (solo lectura):</strong> enseña los eventos de hoy y de los próximos días.</li>
+        <li><strong>Gmail (solo lectura):</strong> enseña los correos sin leer en la página de inicio del panel.</li>
+      </ul>
+      <p>La aplicación no envía, no cambia y no borra nada en tu cuenta de Google.</p>
+    </div>
+
+    <h2>Quién puede usarla</h2>
+    <p>Solo su dueño. No es un servicio público: funciona en un ordenador personal y no se ofrece a otras personas.</p>
+
+    <footer><a href="privacidad.html">Política de privacidad</a></footer>
+  </main>
+</body>
+</html>
